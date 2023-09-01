@@ -62,6 +62,7 @@
             <div class="columns is-centered">
                 <div class="column has-text-centered">
                     <h1 class="title is-1 publication-title">MimicPlay: Long-Horizon Imitation Learning by Watching Human Play</h1>
+                    <h3 class="title is-4 conference-authors"><a target="_blank" href="https://www.corl2023.org/">CoRL 2023 (Oral)</a></h3>
                     <div class="is-size-5 publication-authors">
             <span class="author-block">
                 <a target="_blank" href="https://www.chenwangjeremy.net/">Chen&#160;Wang</a><sup>1</sup>,
@@ -85,14 +86,8 @@
                         <span class="author-block"><sup>5</sup>Caltech, </span>
                         <span class="author-block"><sup>&dagger;</sup>Equal Advising </span>
                     </div>
-
-<!--                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>&dagger;</sup>Equal Advising </span>
-                    </div> -->
-                    
                     <div class="column has-text-centered">
                         <div class="publication-links">
-                            <!-- TODO PDF Link. -->
                             <span class="link-block">
                 <a target="_blank" href="https://arxiv.org/abs/2302.12422"
                    class="external-link button is-normal is-rounded is-dark">
@@ -102,8 +97,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
-
-                            <span class="link-block">
+                <span class="link-block">
                 <a target="_blank" href="assets/MimicPlay.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -112,8 +106,7 @@
                   <span>PDF</span>
                 </a>
               </span>
-                            <!-- Code Link. -->
-                            <span class="link-block">
+                <span class="link-block">
                 <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -121,27 +114,6 @@
                   </span>
                   <span>Code (Coming Soon)</span>
                 </a>
-                <!-- <a target="_blank" href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fa fa-network-wired"></i>
-                  </span>
-                  <span>Models</span>
-                </a>
-                <a target="_blank" href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-robot"></i>
-                  </span>
-                  <span>Benchmark</span>
-                </a>
-                <a target="_blank" href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-database"></i>
-                  </span>
-                  <span>Dataset</span>
-                </a> -->
               </span>
                         </div>
 
@@ -157,41 +129,33 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-sweep_without_exceeding">
-          <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%"
-                 playbackRate=2.0>
-            <source src="assets/videos/disturb_vid/disturb_t1.m4v"
-                    type="video/mp4">
+          <video poster="" id="sweep_without_exceeding" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="assets/videos/disturb_vid/disturb_t1.m4v" type="video/mp4">
           </video>
         </div>
         <div class="item item-sweep_without_touching">
-          <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%"
-                 playbackRate=2.0>
-            <source src="assets/videos/disturb_vid/disturb_t2.m4v"
-                    type="video/mp4">
+          <video poster="" id="sweep_without_touching" autoplay controls muted loop height="100%" playbackRate=2.0>
+            <source src="assets/videos/disturb_vid/disturb_t2.m4v" type="video/mp4">
           </video>
         </div>
         <div class="item item-rotate">
           <video poster="" id="rotate" autoplay controls muted loop height="100%">
-            <source src="assets/videos/disturb_vid/disturb_t3.m4v"
-                    type="video/mp4">
+            <source src="assets/videos/disturb_vid/disturb_t3.m4v" type="video/mp4">
           </video>
         </div>
         <div class="item item-scene_understanding">
           <video poster="" id="scene_understanding" autoplay controls muted loop height="100%">
-            <source src="assets/videos/disturb_vid/disturb_t4.m4v"
-                    type="video/mp4">
+            <source src="assets/videos/disturb_vid/disturb_t4.m4v" type="video/mp4">
           </video>
         </div>
         <div class="item item-simple_manipulation">
           <video poster="" id="simple_manipulation" autoplay controls muted loop height="100%">
-            <source src="assets/videos/disturb_vid/disturb_t5.m4v"
-                    type="video/mp4">
+            <source src="assets/videos/disturb_vid/disturb_t5.m4v" type="video/mp4">
           </video>
         </div>
         <div class="item item-novel_adj">
           <video poster="" id="novel_adj" autoplay controls muted loop height="100%">
-            <source src="assets/videos/disturb_vid/disturb_t6.m4v"
-                    type="video/mp4">
+            <source src="assets/videos/disturb_vid/disturb_t6.m4v" type="video/mp4">
           </video>
         </div>
       </div>
@@ -211,15 +175,18 @@
             a promising paradigm to teach robots manipulation skills in
             the real world, but learning complex long-horizon tasks often
             requires an unattainable amount of demonstrations. To reduce
-            the high data requirement, we resort to human play data &#8212 video sequences of people freely interacting with the environment
-            using their hands. We hypothesize that even with different morphologies, human play data contain rich and salient information
+            the high data requirement, we resort to human play data &#8212 video sequences of people freely interacting
+            with the environment
+            using their hands. We hypothesize that even with different morphologies, human play data contain rich and
+            salient information
             about physical interactions that can readily facilitate robot policy
             learning. Motivated by this, we introduce a hierarchical learning
             framework named MimicPlay that learns latent plans from
             human play data to guide low-level visuomotor control trained on
             a small number of teleoperated demonstrations. With systematic
             evaluations of 14 long-horizon manipulation tasks in the real
-            world, we show that MimicPlay dramatically outperforms state-of-the-art imitation learning methods in task success rate, generalization ability, and robustness to disturbances.
+            world, we show that MimicPlay dramatically outperforms state-of-the-art imitation learning methods in task
+            success rate, generalization ability, and robustness to disturbances.
           </p>
         </div>
       </div>
@@ -233,17 +200,17 @@
     <div class="rows">
       <div class="rows is-centered ">
         <div class="row is-full-width">
-          <h2 class="title is-3"><span
-            class="dvima">Motivation</span></h2>
+          <h2 class="title is-3"><span class="dvima">Motivation</span></h2>
           <br>
           <video poster="" autoplay controls muted loop height="100%">
-            <source src="assets/videos/method.mp4"
-                    type="video/mp4">
+            <source src="assets/videos/method.mp4" type="video/mp4">
           </video>
           <span style="font-size: 110%">
-            Human is able to complete a long-horizon task much faster than a teleoperated robot. This observation inspires us to develop
-MimicPlay, a hierarchical imitation learning algorithm that learns a high-level planner from cheap human play data and a low-level control
-policy from a small amount of multi-task teleoperated robot demonstrations.
+            Human is able to complete a long-horizon task much faster than a teleoperated robot. This observation
+            inspires us to develop
+            MimicPlay, a hierarchical imitation learning algorithm that learns a high-level planner from cheap human
+            play data and a low-level control
+            policy from a small amount of multi-task teleoperated robot demonstrations.
         </div>
       </div>
 
@@ -251,36 +218,27 @@ policy from a small amount of multi-task teleoperated robot demonstrations.
   </div>
 </section>
 
-<!--<section class="section">-->
-<!--    <div class="container is-max-widescreen">-->
-<!--        <div class="rows">-->
-<!--            <div class="rows is-centered ">-->
-<!--                <div class="row is-full-width">-->
-<!--                    <img src="assets/images/pull.png" class="interpolation-image"-->
-<!--                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>-->
-<!--                    <span style="font-size: 110%">Human is able to complete a long-horizon task much faster than a teleoperated robot. This observation inspires us to develop-->
-<!--MimicPlay, a hierarchical imitation learning algorithm that learns a high-level planner from cheap human play data and a low-level control-->
-<!--policy from a small amount of multi-task teleoperated robot demonstrations. We show that MimicPlay significantly improves sample-->
-<!--efficiency and robustness of imitation learning algorithms in long-horizon tasks.</span>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 <section class="section">
   <div class="container is-max-widescreen">
     <div class="rows">
       <div class="rows is-centered ">
         <div class="row is-full-width">
-          <h2 class="title is-3"><span
-            class="dvima">Method</span></h2>
+          <h2 class="title is-3"><span class="dvima">Method</span></h2>
           <br>
-          <img src="assets/images/method.jpg" class="interpolation-image"
-               alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-          <span style="font-size: 110%">MimicPlay is a two-stage framework for learning long-horizon manipulation tasks. <b>Stage 1:</b> a goal-conditioned trajectory generation
-model is trained to extract latent plans from human play data. The goal is to learn a latent plan space that contains coarse guidance for
-diverse task goals. <b>Stage 2:</b> the pre-trained planner is leveraged to generate latent plans conditioned on the goal image sampled from the
-task video prompt. Based on generated latent plans, the robot policy is trained with a plan-guided imitation learning algorithm.</span>
+          <img src="assets/images/method.jpg" class="interpolation-image" alt=""
+            style="display: block; margin-left: auto; margin-right: auto" />
+          <br>
+          <span style="font-size: 110%">Overview of MimicPlay. <b>(a) Training Stage 1:</b> using cheap human play data
+            to train a goal-conditioned trajectory
+            generation model to build a latent plan space that contains high-level guidance for diverse task goals.
+            <b>(b) Training
+              Stage 2:</b> using a small amount of teleoperation data to train a low-level robot controller conditioned
+            on the latent
+            plans generated by the pre-trained (frozen) planner. <b>(c) Testing:</b> Given a single long-horizon task
+            video prompt (either
+            human motion video or robot teleoperation video), MimicPlay generates latent plans and guides the low-level
+            controller
+            to accomplish the task.</span>
         </div>
       </div>
     </div>
@@ -294,16 +252,15 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
     <div class="rows">
       <div class="rows is-centered ">
         <div class="row is-full-width">
-          <h2 class="title is-3"><span
-            class="dvima">Experiments</span></h2>
+          <h2 class="title is-3"><span class="dvima">Experiments</span></h2>
           <br>
-          <h3 class="title is-4"><span
-            class="dvima">Evaluation Results: long-horizon & sample efficiency</span></h3>
+          <h3 class="title is-4"><span class="dvima">Evaluation Results: long-horizon & sample efficiency</span></h3>
 
-          <img src="assets/images/tab1.png" class="interpolation-image"
-               alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-          <align align="center"  style="font-size: 110%">
-            Quantitative evaluation results in the Kitchen environment in terms of the number of successful runs out of all trials. Our approach
+          <img src="assets/images/tab1.png" class="interpolation-image" alt=""
+            style="display: block; margin-left: auto; margin-right: auto" />
+          <align align="center" style="font-size: 110%">
+            Quantitative evaluation results in the Kitchen environment in terms of the number of successful runs out of
+            all trials. Our approach
             outperforms prior works in terms of sample efficiency and long-horizon task success rate.
           </align>
           <br>
@@ -315,39 +272,24 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
                   <div class="columns">
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Play-LMP</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/kitchen/kitchen_video_1.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/kitchen/kitchen_video_1.mp4" type="video/mp4">
                       </video>
                     </div>
 
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Ours (0min-human)</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/kitchen/kitchen_video_2.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/kitchen/kitchen_video_2.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Ours (10min-human)</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/kitchen/kitchen_video_3.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/kitchen/kitchen_video_3.mp4" type="video/mp4">
                       </video>
                     </div>
 
@@ -356,109 +298,73 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
               </div>
 
             </div>
-            <img src="assets/images/kitchen-table.png" class="interpolation-image" width="80%"
-                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+            <img src="assets/images/kitchen-table.png" class="interpolation-image" width="80%" alt=""
+              style="display: block; margin-left: auto; margin-right: auto" />
             <div class="rows">
               <div class="rows is-centered ">
                 <div class="row is-full-width">
                   <br>
                   <br>
-                  <h3 class="title is-4"><span
-                    class="dvima">Evaluation Results: generalization</span></h3>
-                  <h3 class="title is-5" align="center"><span
-                    class="dvima">Training multiple tasks within one model &#8212 Ours (10min-human + 20 demos)</span></h3>
+                  <h3 class="title is-4"><span class="dvima">Evaluation Results: generalization</span></h3>
+                  <h3 class="title is-5" align="center"><span class="dvima">Training multiple tasks within one model
+                      &#8212 Ours (10min-human + 20 demos)</span></h3>
                   <div class="columns">
                     <!-- Simple Object Manipulation -->
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Task 1</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_seen/shelf_seen_1.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_seen/shelf_seen_1.mp4" type="video/mp4">
                       </video>
                     </div>
 
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Task 2</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_seen/shelf_seen_2.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_seen/shelf_seen_2.mp4" type="video/mp4">
                       </video>
                     </div>
                     <br>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Task 3</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_seen/shelf_seen_3.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_seen/shelf_seen_3.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Task 4</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_seen/shelf_seen_4.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_seen/shelf_seen_4.mp4" type="video/mp4">
                       </video>
                     </div>
 
                   </div>
-                  <h3 class="title is-5" align="center"><span
-                    class="dvima">One-shot generalize to unseen temporal composition</span></h3>
+                  <h3 class="title is-5" align="center"><span class="dvima">One-shot generalize to unseen temporal
+                      composition</span></h3>
                   <div class="columns">
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Easy</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_1.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_1.mp4" type="video/mp4">
                       </video>
                     </div>
                     <br>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Medium</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_2.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_2.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Hard</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_3.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/shelf_unseen/shelf-unseen_3.mp4" type="video/mp4">
                       </video>
                     </div>
 
@@ -467,7 +373,7 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
               </div>
 
             </div>
-            <align align="center"  style="font-size: 110%">
+            <align align="center" style="font-size: 110%">
               After training multiple tasks within one model,
               MimicPlay is able to generalize (one-shot) to new tasks with unseen temporal compositions.
             </align>
@@ -476,59 +382,38 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
             <br>
             <br>
             <div class="rows">
-              <h3 class="title is-4"><span
-                class="dvima">Evaluation Results: multi-task learning</span></h3>
+              <h3 class="title is-4"><span class="dvima">Evaluation Results: multi-task learning</span></h3>
               <div class="rows is-centered ">
                 <div class="row is-full-width">
                   <div class="columns">
                     <!-- Simple Object Manipulation -->
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Flower</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/table3_video/table3_video_1.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/table3_video/table3_video_1.mp4" type="video/mp4">
                       </video>
                     </div>
 
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Whiteboard</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/table3_video/table3_video_2.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/table3_video/table3_video_2.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Sandwich</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/table3_video/table3_video_3.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/table3_video/table3_video_3.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="column has-text-left">
                       <h3 class="title is-6" align="center">Cloth</h3>
-                      <video id="simple-object-manipulation-single-task-video"
-                             controls
-                             muted
-                             autoplay
-                             loop
-                             width="100%">
-                        <source src="assets/videos/demos/table3_video/table3_video_4.mp4"
-                                type="video/mp4">
+                      <video id="simple-object-manipulation-single-task-video" controls muted autoplay loop
+                        width="100%">
+                        <source src="assets/videos/demos/table3_video/table3_video_4.mp4" type="video/mp4">
                       </video>
                     </div>
 
@@ -537,46 +422,71 @@ task video prompt. Based on generated latent plans, the robot policy is trained 
               </div>
             </div>
             <br>
-            <h3 class="title is-5" align="center"><span
-              class="dvima">Ours (10min-human + 20 demos)</span></h3>
-            <img src="assets/images/multitask-table.png" class="interpolation-image" width="90%"
-                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-            <align align="center"  style="font-size: 110%">
-              MimicPlay has the smallest performance drop which highlights its capability to handle diverse tasks within one model.
+            <h3 class="title is-5" align="center"><span class="dvima">Ours (10min-human + 20 demos)</span></h3>
+            <img src="assets/images/multitask-table.png" class="interpolation-image" width="90%" alt=""
+              style="display: block; margin-left: auto; margin-right: auto" />
+            <align align="center" style="font-size: 110%">
+              MimicPlay has the smallest performance drop which highlights its capability to handle diverse tasks within
+              one model.
             </align>
           </div>
           <br>
           <br>
-          <h3 class="title is-4"><span
-            class="dvima">Qualitative results of the learned latent plans </span></h3>
+          <h3 class="title is-4"><span class="dvima">Qualitative results of the learned latent plans </span></h3>
 
           <br>
 
-          <img src="assets/images/qual1.png" class="interpolation-image" width="90%"
-               alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+          <img src="assets/images/qual1.png" class="interpolation-image" width="90%" alt=""
+            style="display: block; margin-left: auto; margin-right: auto" />
           <span style="font-size: 110%">
-                        Qualitative visualization of the learned latent plan. <b>(a)</b> Visualization of the trajectory prediction results decoded from the latent
-plans learned by different methods. The fading color of the trajectory from blue to green indicates the time step from 1 to 10. <b>(b)</b> t-SNE
-visualization of latent plans, the latent plans of the same task tend to cluster in the latent space.
-                    </span>
+            Qualitative visualization of the learned latent plan. <b>(a)</b> Visualization of the trajectory prediction
+            results decoded from the latent
+            plans learned by different methods. The fading color of the trajectory from blue to green indicates the time
+            step from 1 to 10. <b>(b)</b> t-SNE
+            visualization of latent plans, the latent plans of the same task tend to cluster in the latent space.
+          </span>
 
           <br>
           <br>
           <br>
-          <h3 class="title is-4"><span
-            class="dvima">Evaluation results: robustness against disturbance </span></h3>
+          <h3 class="title is-4"><span class="dvima">Evaluation results: robustness against disturbance </span></h3>
 
           <br>
-          <img src="assets/images/qual2.png" class="interpolation-image" width="60%"
-               alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+          <img src="assets/images/qual2.png" class="interpolation-image" width="60%" alt=""
+            style="display: block; margin-left: auto; margin-right: auto" />
           <span style="font-size: 110%">
-                        Qualitative visualization of the latent plans before the disturbance and re-planning. <b>Column 1</b>: third-person view. <b>Column
-2</b>: visualization of the latent plan before disturbance. <b>Column 3</b>:
-human disturbance; the red arrow indicts the direction of disturbance.
-                      <b>Column 4</b>: visualization of real-time re-planning capabilities, which
-show robustness against disturbance. <b>Column 5</b>: robot recovers with
-the updated task plan. Video results can be found at the beginning of this page.
-                    </span>
+            Qualitative visualization of the latent plans before the disturbance and re-planning. <b>Column 1</b>:
+            third-person view. <b>Column
+              2</b>: visualization of the latent plan before disturbance. <b>Column 3</b>:
+            human disturbance; the red arrow indicts the direction of disturbance.
+            <b>Column 4</b>: visualization of real-time re-planning capabilities, which
+            show robustness against disturbance. <b>Column 5</b>: robot recovers with
+            the updated task plan. Video results can be found at the beginning of this page.
+          </span>
+          <br>
+          <br>
+          <br>
+          <h3 class="title is-4"><span class="dvima">An intuitive interface for prompting robot motion with human
+              videos</span></h3>
+
+          <br>
+          <!-- <img src="assets/images/qual2.png" class="interpolation-image" width="60%" alt=""
+                      style="display: block; margin-left: auto; margin-right: auto" /> -->
+          <!-- <video poster="" autoplay controls muted loop height="80%" width="80%">
+                        <source src="assets/videos/following.mp4" type="video/mp4">
+                      </video> -->
+          <div style="display: flex; justify-content: center;">
+            <video poster="" autoplay controls muted loop style="width: 80%;">
+              <source src="assets/videos/following.mp4" type="video/mp4">
+            </video>
+          </div>
+          <span style="font-size: 110%">
+            This is a no-cut video result of prompting robot manipulation with human motion (The robot is running the
+            same trained
+            model). MimicPlay integrates human motion and robot skills into a joint latent plan space, which enables an
+            intuitive
+            interface for directly specifying robot manipulation goals with human videos.
+          </span>
         </div>
       </div>
 
@@ -590,8 +500,8 @@ the updated task plan. Video results can be found at the beginning of this page.
     <div class="rows">
       <div class="rows is-centered ">
         <div class="row is-full-width">
-          <h2 class="title is-3"><span
-            class="dvima">Conclusion</span></h2>
+          <h2 class="title is-3"><span class="dvima">Conclusion</span></h2>
+
           <p style="font-size: 125%">
             We introduce MimicPlay, a scalable imitation learning
             algorithm that exploits the complementary strengths of two
@@ -599,11 +509,13 @@ the updated task plan. Video results can be found at the beginning of this page.
             teleoperated robot demonstration data. Using human play data,
             the high-level controller learns goal-conditioned latent plans
             by predicting future 3D human hand trajectories given the
-            goal image. Using robot demonstration data, the low-level controller then generates the robot actions from the latent plans.
+            goal image. Using robot demonstration data, the low-level controller then generates the robot actions from
+            the latent plans.
             With this hierarchical design, MimicPlay outperforms prior
             arts by over 50% in 14 challenging long-horizon manipulation
             tasks. MimicPlay paves the path for future research to scale
             up robot imitation learning with affordable human costs.
+
           </p>
 
         </div>
@@ -626,6 +538,21 @@ year={2023}
 } </code></pre>
   </div>
 </section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> and <a
+              href="https://peract.github.io/">PerAct</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
