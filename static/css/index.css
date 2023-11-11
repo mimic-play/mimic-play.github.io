@@ -199,3 +199,10 @@ body {
 .conference-authors a {
     color: #B83A4B !important;
 }
+
+a{ 
+color:#666666;
+text-decoration:none;
+}
+
+a:link { text-decoration: none; color: #008b45; }
